@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpTutorialVS2002", "CSharpTutorialVS2002.csproj", "{B66A3F49-16EF-41B9-8B29-631EAA7D35AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{B66A3F49-16EF-41B9-8B29-631EAA7D35AF}.Debug.ActiveCfg = Debug|.NET
+		{B66A3F49-16EF-41B9-8B29-631EAA7D35AF}.Debug.Build.0 = Debug|.NET
+		{B66A3F49-16EF-41B9-8B29-631EAA7D35AF}.Release.ActiveCfg = Release|.NET
+		{B66A3F49-16EF-41B9-8B29-631EAA7D35AF}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
