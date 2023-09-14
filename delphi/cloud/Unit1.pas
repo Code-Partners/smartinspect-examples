@@ -55,7 +55,7 @@ end;
 
 initialization
 
-  Si := TSmartInspect.Create('Cloud sample project');
+  Si := TSmartInspect.Create('Cloud example project');
 
   Si.Connections := CloudConnectionStringBuilder().AddCloudProtocol
      .SetRegion('eu-central-1')
