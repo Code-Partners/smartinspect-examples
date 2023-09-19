@@ -60,6 +60,8 @@ initialization
   Si.Connections := CloudConnectionStringBuilder().AddCloudProtocol
      .SetRegion('eu-central-1')
      .SetWriteKey(WriteKey)
+     .AddCustomLabel('User', 'Bob')
+     .AddCustomLabel('Version', '0.0.1')
      .EndProtocol.Build;
 
   SiMain := Si.AddSession(SiSession, True);
