@@ -19,6 +19,8 @@ public class Main {
                         .addCloudProtocol()
                         .setRegion("eu-central-1")
                         .setWriteKey(WRITE_KEY)
+                        .addCustomLabel("User", "Bob")
+                        .addCustomLabel("Version", "0.0.1")
                         .and().build()
         );
 
