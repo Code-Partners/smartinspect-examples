@@ -2,7 +2,7 @@ package com.codepartners;
 
 import com.gurock.smartinspect.InvalidConnectionsException;
 import com.gurock.smartinspect.SmartInspect;
-import com.gurock.smartinspect.session.Session;
+import com.gurock.smartinspect.Session;
 
 import java.util.Objects;
 import java.util.Scanner;

@@ -16,7 +16,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.smartinspect</groupId>
+            <groupId>com.code-partners</groupId>
             <artifactId>smartinspect-java-library</artifactId>
             <!-- TODO use version that is on Maven Central -->
             <version>0.1-SNAPSHOT</version>
