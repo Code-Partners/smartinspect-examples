@@ -4,15 +4,13 @@ import threading
 import time
 from fractions import Fraction
 
-from common.color.color import Color
-from common.level import Level
-from common.context.viewer_context import ViewerContext
-from common.viewer_id import ViewerId
-from packets.log_entry import LogEntryType
-from packets.process_flow import ProcessFlowType
-from packets.watch_type import WatchType
+from smartinspect.common.color import Color
+from smartinspect.common.level import Level
+from smartinspect.common.context import ViewerContext
+from smartinspect.common.viewer_id import ViewerId
+from smartinspect.packets import LogEntryType, ProcessFlowType, WatchType
+from smartinspect.common.source_id import SourceId
 from smartinspect import SmartInspect
-from common.source_id import SourceId
 
 
 # Description:
@@ -131,7 +129,7 @@ if __name__ == '__main__':
     context = ViewerContext(ViewerId.INSPECTOR)
     session.log_custom_context("Custom Context", LogEntryType.WARNING, context)
 
-    session.log_custom_text("Custom Text", "is custom text", LogEntryType.MEMORYSTATISTIC, ViewerId.DATA)
+    session.log_custom_text("Custom Text", "is custom text", LogEntryType.MEMORY_STATISTIC, ViewerId.DATA)
     session.log_custom_file("just.txt", LogEntryType.DEBUG, ViewerId.DATA, "just a file")
     session.log_text("Logging text", "text")
     session.log_text_file("just.txt", "Logging text file")

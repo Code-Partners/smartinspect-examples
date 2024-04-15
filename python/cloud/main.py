@@ -1,4 +1,4 @@
-from connections.builders import ConnectionStringBuilder
+from smartinspect.connections import ConnectionStringBuilder
 from smartinspect import SmartInspect
 
 # Description:

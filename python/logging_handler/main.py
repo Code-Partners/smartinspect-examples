@@ -1,6 +1,6 @@
 import logging
-from common.color.color import Color
-from smartinspect_handler.smartinspect_handler import SmartInspectHandler
+from smartinspect.common.color import Color
+from smartinspect.smartinspect_handler import SmartInspectHandler
 
 # Description:
 #

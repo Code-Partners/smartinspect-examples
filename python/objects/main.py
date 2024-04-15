@@ -1,4 +1,4 @@
-from common.color.color import Color
+from smartinspect.common.color import Color
 from smartinspect import SmartInspect
 
 # Description:
