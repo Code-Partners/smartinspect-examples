@@ -1,0 +1,129 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 520
+  ClientWidth = 452
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Header: TToolBar
+    Size.Width = 452.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object HeaderLabel: TLabel
+      Align = Contents
+      Size.Width = 452.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'SmartInspect FMX Sample'
+    end
+  end
+  object Footer: TToolBar
+    Align = Bottom
+    Position.Y = 472.000000000000000000
+    Size.Width = 452.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 452.000000000000000000
+    Size.Height = 424.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object edtIP: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 1
+      Text = '10.0.0.183'
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Hint = 'IP Address of Console'
+      Size.Width = 330.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'IP Address of Console'
+      ParentShowHint = False
+      ShowHint = True
+    end
+    object Button1: TButton
+      Action = actSIConnect
+      Anchors = [akTop, akRight]
+      ImageIndex = -1
+      Position.X = 346.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 98.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      TextSettings.Trimming = None
+    end
+    object Button2: TButton
+      Action = actLogMessage
+      Anchors = [akLeft, akTop, akRight]
+      ImageIndex = -1
+      Position.X = 8.000000000000000000
+      Position.Y = 60.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      TextSettings.Trimming = None
+    end
+    object Button3: TButton
+      Action = actLogSystemInfo
+      Anchors = [akLeft, akTop, akRight]
+      ImageIndex = -1
+      Position.X = 8.000000000000000000
+      Position.Y = 111.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      TextSettings.Trimming = None
+    end
+    object Button4: TButton
+      Action = actLogScreenshot
+      Anchors = [akLeft, akTop, akRight]
+      ImageIndex = -1
+      Position.X = 8.000000000000000000
+      Position.Y = 164.000000000000000000
+      Size.Width = 330.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      TextSettings.Trimming = None
+    end
+  end
+  object ActionList1: TActionList
+    Left = 304
+    Top = 224
+    object actSIConnect: TAction
+      Text = 'Connect'
+      OnExecute = actSIConnectExecute
+      OnUpdate = actSIConnectUpdate
+    end
+    object actLogMessage: TAction
+      Text = 'Log Message'
+      OnExecute = actLogMessageExecute
+      OnUpdate = actGenericConnectedUpdate
+    end
+    object actLogSystemInfo: TAction
+      Text = 'Log System Info'
+      OnExecute = actLogSystemInfoExecute
+      OnUpdate = actGenericConnectedUpdate
+    end
+    object actLogScreenshot: TAction
+      Text = 'Log Screenshot'
+      OnExecute = actLogScreenshotExecute
+      OnUpdate = actGenericConnectedUpdate
+    end
+  end
+end
